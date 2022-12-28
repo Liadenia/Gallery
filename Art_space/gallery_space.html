@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title> Gallery . S Space </title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
+</head>
+<body>
+    <header>
+        <div class="innerbox">
+            <h1><a href="../gallery_index.html"><img src="../image/Title/LOGO1.png" alt="gallery.S"></a></h1>
+            <nav id="navigation">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">GALLERY<span></span></a>
+                        <ul class="sub">
+                            <li><a href="../Gallery/gallery_intro.html">갤러리소개<span></span></a></li>
+                            <li><a href="#">찾아오는 길<span></span></a></li>
+                            <li><a href="#">공지사항<span></span></a></li>
+                            <li><a href="#">연락방법<span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ART SPACE<span></span></a>
+                        <ul class="sub">
+                            <li><a href="../Art_space/gallery_space.html">갤러리공간<span></span></a></li>
+                            <li><a href="#">대관현황<span></span></a></li>
+                            <li><a href="#">대관규약<span></span></a></li>
+                            <li><a href="#">대관신청<span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">EXHIBITION<span></span></a>
+                        <ul class="sub">
+                            <li><a href="#">현재전시<span></span></a></li>
+                            <li><a href="#">과거전시<span></span></a></li>
+                            <li><a href="#">아트페어<span></span></a></li>
+                            <li><a href="#">기획전시<span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ARTIST<span></span></a>
+                        <ul class="sub">
+                            <li><a href="../Artist/gallery_artist.html">전체보기<span></span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ARCHIVE<span></span></a>
+                        <ul class="sub">
+                            <li><a href="#">전시<span></span></a></li>
+                            <li><a href="#">뉴스<span></span></a></li>
+                        </ul>
+                    </li>    
+                </ul>
+                <div class="sub_bg"></div>
+            </nav>
+            <div class="toggle">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+                <span class="sr_only">전체메뉴</span>
+            </div>
+        </div>
+        
+        <nav id="nav_menu">
+            <div class="bg_menu">
+                <div class="nav_head">
+                    <h2><a href="#"><img src="../image/Title/LOGO1.png" alt="gallery.S"></a></h2>
+                    <ul class="lang">
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                    <div class="search_bar">
+                        <form action="#" method="get">
+                            <input type="search" placeholder="search.." id="search_box" required>
+                            <button type="submit" id="btn" title="search">
+                                <img src="../image/Icon/pngwing.png" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav_body">
+                    <ul class="gnb_menu">
+                        <li>
+                            <a href="#">GALLERY<span></span></a>
+                            <ul class="sub_m">
+                                <li><a href="#">갤러리소개<span></span></a></li>
+                                <li><a href="#">찾아오는 길<span></span></a></li>
+                                <li><a href="#">공지사항<span></span></a></li>
+                                <li><a href="#">연락방법<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ART SPACE<span></span></a>
+                            <ul class="sub_m">
+                                <li><a href="#">갤러리공간<span></span></a></li>
+                                <li><a href="#">대관현황<span></span></a></li>
+                                <li><a href="#">대관규약<span></span></a></li>
+                                <li><a href="#">대관신청<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">EXHIBITION<span></span></a>
+                            <ul class="sub_m move">
+                                <li><a href="#">현재전시<span></span></a></li>
+                                <li><a href="#">과거전시<span></span></a></li>
+                                <li><a href="#">아트페어<span></span></a></li>
+                                <li><a href="#">기획전시<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ARTIST<span></span></a>
+                            <ul class="sub_m">
+                                <li><a href="#">전체보기<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ARCHIVE<span></span></a>
+                            <ul class="sub_m move">
+                                <li><a href="#">전시<span></span></a></li>
+                                <li><a href="#">뉴스<span></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_bottom">
+                    <a href="#">CONTECT</a>
+                    <ul class="sns_menu">
+                        <li><a href="#"><img src="../image/Icon/sns_01(2).png" alt=""></a></li>
+                        <li><a href="#"><img src="../image/Icon/sns_02(2).png" alt=""></a></li>
+                        <li><a href="#"><img src="../image/Icon/sns_03(2).png" alt=""></a></li>
+                        <li><a href="#"><img src="../image/Icon/sns_04(2).png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="space">
+        <div class="title_color">
+            <img src="../image/Title/art_space(en).png" alt="art space">
+        </div>
+        <div class="space_page">
+            <div class="space_slide">
+                <img src="../image/D-Main_img/gallery2-1.png" alt="gallery space">
+                <img src="../image/D-Main_img/gallery2-1.png" alt="gallery space">
+            </div>
+        </div>
+    </section>
+    <section id="space_info">
+        <div class="space_title">
+            <img src="../image/Title/gallery_space(kr).png" alt="갤러리 공간">
+        </div>
+        <div class="space_txt">
+            <p>갤러리.S는 국내외 신진 작가들을 발굴하고 전시지원을 지속적으로 하고 있습니다. 또한 개인전, 단체전, 졸업전, 청구전 등 각 예술분야의 전시들을 하기 알맞는 환경을 조성하여 여러분의 전시를 응원하고자 합니다.</p>
+            <br>
+            <p>갤러리.S의 전시장은 총 210평의 규모의 전시관이며 각 홀마다 별도로 전시도 가능합니다.</p>
+            <br>
+            <p>전시장 크기와 금액은 아래를 참고바랍니다.</p>
+            <br>
+            <span class="bold">
+            <p>A-Hall : 65평 &#58; 380만원</p>
+            <p>B-Hall : 40평 &#58; 160만원</p>
+            <p>C-Hall : 70평 &#58; 460만원</p>
+            </span>
+            <br>
+            <p>A홀과 B홀은 가벽으로 공간분리가 되어있어 공간을 합하는 것도 가능합니다.</p>
+            <p>이외의 전시장 입구와 공용구간은 선착순으로 작품을 추가 디피 할 수 있습니다.</p> 
+            <br>
+            <p>외의 문의 사항은 02 - 1234 - 4321 로 연락바랍니다.</p>
+        </div>
+        <div class="space_map">
+            <img src="../image/D-Main_img/Map.png" alt="도면">
+        </div>
+        <div class="rent_btn"><a href="#">대관신청</a></div>
+    </section>
+    <footer>
+        <div class="to_top">
+            <a href="#"><img src="../image/Icon/to-top1.png" alt="to top"></a>
+        </div>
+        <div class="innerbox">
+            <h3><a href="#"><img src="../image/Title/LOGO-bottom.png"></a></h3>
+            <ul class="sns_footer">
+                <li><a href="#"><img src="../image/Icon/sns_01.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="../image/Icon/sns_02.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="../image/Icon/sns_03.png" alt="카카오톡"></a></li>
+                <li><a href="#"><img src="../image/Icon/sns_04.png" alt="유투브"></a></li>
+            </ul>
+            <div class="footer_text">
+                <address>
+                    <p>서울시 OO구 OO로 16길 4 갤러리 . S</p>
+                    <p>TEL: 02-1234-4321 E-MAIL: meltingwhite@naver.com</p>
+                </address>
+                <p>COPYRIGHT GALLERY . S. ALL RIGHTS RESERVED.</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
