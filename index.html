@@ -7,12 +7,27 @@
     <title> Gallery . S main </title>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/gallery_style.css">
+    <link rel="icon" href="image/icon/favicon.png">
 </head>
 <body>
     <header>
+        <!-- <div class="container">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+            </filter>
+        </defs>
+        </svg> -->
         <div class="innerbox">
-            <h1><a href="gallery_index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h1>
+            <h1><a href="index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h1>
             <nav id="navigation">
                 <ul class="gnb">
                     <li>
@@ -69,7 +84,7 @@
         <nav id="nav_menu">
             <div class="bg_menu">
                 <div class="nav_head">
-                    <h2><a href="#"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h2>
+                    <h2><a href="index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h2>
                     <ul class="lang">
                         <li><a href="#">KR</a></li>
                         <li><a href="#">EN</a></li>
@@ -88,7 +103,7 @@
                         <li>
                             <a href="#">GALLERY<span></span></a>
                             <ul class="sub_m">
-                                <li><a href="#">갤러리소개<span></span></a></li>
+                                <li><a href="Gallery/gallery_intro.html">갤러리소개<span></span></a></li>
                                 <li><a href="#">찾아오는 길<span></span></a></li>
                                 <li><a href="#">공지사항<span></span></a></li>
                                 <li><a href="#">연락방법<span></span></a></li>
@@ -97,7 +112,7 @@
                         <li>
                             <a href="#">ART SPACE<span></span></a>
                             <ul class="sub_m">
-                                <li><a href="#">갤러리공간<span></span></a></li>
+                                <li><a href="Art_space/gallery_space.html">갤러리공간<span></span></a></li>
                                 <li><a href="#">대관현황<span></span></a></li>
                                 <li><a href="#">대관규약<span></span></a></li>
                                 <li><a href="#">대관신청<span></span></a></li>
@@ -115,7 +130,7 @@
                         <li>
                             <a href="#">ARTIST<span></span></a>
                             <ul class="sub_m">
-                                <li><a href="#">전체보기<span></span></a></li>
+                                <li><a href="Artist/gallery_artist.html">전체보기<span></span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -141,19 +156,24 @@
     </header>
     <section id="main1">
         <div id="main_slide">
-            <img src="image/D-Main_img/banner_gallery1.png" alt="gallery">
-            <img src="image/D-Main_img/banner_gallery2.png" alt="gallery">
-            <img src="image/D-Main_img/banner_gallery3.png" alt="gallery">
-            <div class="slide_btn">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery1.png" alt="gallery"></div>
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery2.png" alt="gallery"></div>
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery3.png" alt="gallery"></div>
+                </div>
+            </div>
+            <!-- <div class="slide_btn">
                 <span class="dot active-dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-            </div>
+            </div> -->
             <div class="main_title1">
                 <p>GALLERY . S 하반기 기획전시.</p>
                 <p>「 부러진 가지들 」</p>
                 <p>2022. 12. 13 (화) ~ 2022. 12. 19 (월)</p>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="search_bar">
             <form action="#" method="get">
@@ -181,27 +201,42 @@
         <div class="color2">
             <div class="card_section">
                 <div class="card">
-                    <img src="image/D-Main_img/당신의계절-1.png" alt="당신의 계절">
-                    <div class="txt">
-                        <p>"당신의 계절"</p>
-                        <p>김상미</p>
-                        <p>KIM SANG-MI</p>
+                    <div class="front">
+                        <img src="image/D-Main_img/당신의계절-1.png" alt="당신의 계절">
+                        <div class="txt">
+                            <p>"당신의 계절"</p>
+                            <p>김상미</p>
+                            <p>KIM SANG-MI</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img src="image/D-Main_img/등나무꽃-1.png" alt="등나무 꽃">
                     </div>
                 </div>
                 <div class="card">
-                    <img src="image/D-Main_img/여름의잔상-1.png" alt="여름의 잔상">
-                    <div class="txt">
-                        <p>"여름의 잔상"</p>
-                        <p>김상미</p>
-                        <p>KIM SANG-MI</p>
+                    <div class="front">
+                        <img src="image/D-Main_img/여름의잔상-1.png" alt="여름의 잔상">
+                        <div class="txt">
+                            <p>"여름의 잔상"</p>
+                            <p>김상미</p>
+                            <p>KIM SANG-MI</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img src="image/D-Main_img/당신의계절-1.png" alt="당신의 계절">
                     </div>
                 </div>
                 <div class="card">
-                    <img src="image/D-Main_img/등나무꽃-1.png" alt="등나무 꽃">
-                    <div class="txt">
-                        <p>"등나무 꽃"</p>
-                        <p>김상미</p>
-                        <p>KIM SANG-MI</p>
+                    <div class="front">
+                        <img src="image/D-Main_img/등나무꽃-1.png" alt="등나무 꽃">
+                        <div class="txt">
+                            <p>"등나무 꽃"</p>
+                            <p>김상미</p>
+                            <p>KIM SANG-MI</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <img src="image/D-Main_img/여름의잔상-1.png" alt="여름의 잔상">
                     </div>
                 </div>
             </div>
@@ -229,5 +264,31 @@
             
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 1300,
+            spaceBetween: 0,
+            effect: "fade",
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+        $('.swiper-slide').hover(function(){
+            swiper.autoplay.stop();
+            }, function(){
+            swiper.autoplay.start();
+            });
+    </script>
 </body>
 </html>

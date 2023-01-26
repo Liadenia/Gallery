@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* --------------------SUB PAGE - ARTIST SUB PAGE 시작---------------- */
+
+#artist_s{
+    width:100%;
+    max-width:1920px;
+    height:auto;
+}
+#artist_s>.title_color{
+    width:100%; height:104px;
+    background: #96bcc4;
+    margin:110px auto;
+}
+#artist_s>.title_color>img{
+    margin-top:67px;
+    position:absolute;
+    left:20%;
+}
+
+#artist_s>.inner_wrapper{
+    width:300%; height:70vh;
+    /* overflow:hidden; */
+    margin:auto 0px;
+    position:relative;
+    overflow-x:scroll;
+}
+
+#artist_s>.inner_wrapper p{
+    text-align:left;
+    font-size:15px;
+    line-height:33px;
+}
+
+#artist_s>.inner_wrapper>.art_note{
+    width:760px;
+    height:auto;
+    /* height:500px; */
+    padding:20px;
+    margin:30px 30px 0px 150px;
+    position:absolute;
+}
+#artist_s>.inner_wrapper>.art_note>h2{
+    margin-bottom:20px;
+    line-height:40px;
+}
+
+#artist_s>.inner_wrapper>.profile{
+    width:500px;
+    height:auto;
+    /* height:500px; */
+    position:absolute;
+    left:990px;
+    /* top:30px; */
+    /* padding:20px; */
+}
+#artist_s>.inner_wrapper>.profile>h3{
+    margin-bottom:20px;
+    line-height:40px;
+    font-weight:bold;
+}
+
+#artist_s>.inner_wrapper>.art_wrapper{
+    width:100%; height:650px;
+    display:flex;
+    flex-direction:row;
+    /* justify-content:space-around; */
+    position:absolute;
+    left:35%;
+}
+#artist_s>.inner_wrapper>.art_wrapper>.art_work>figure{
+}
+#artist_s>.inner_wrapper>.art_wrapper>.art_work>figure>img{
+    margin-left:30px;
+}
+#artist_s>.inner_wrapper>.art_wrapper>.art_work>figure>figcaption{
+    float:right;
+    padding:10px 0px;
+    line-height:25px;
+}
+
+#p-nav{
+    width:410px; height:510px;
+    background:#f5f5f5;
+    border:3px solid #888787;
+    border-radius:3px;
+    position:relative;
+    left:75%; top:10%;
+    text-align:center;
+    line-height:30px;
+    font-weight:bold;
+}
+.p-navigation{
+    width:310px; height:310px;
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -60%);
+}
+.p-navigation>.p-img{
+    display:block;
+    float:left;
+    padding:7px;
+}
+
+.p-btn{
+    width:410px; height:31px;
+    position:relative;
+    top:90%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.p-btn>div{
+    width:100px; height:30px;
+    border:1px solid #ababab;
+    background:#fff;
+    
+}
+.p-btn>div>a{
+    width:100%;
+    height:100%;
+    color:#454545;
+    display:block;
+    text-align:center;
+    line-height:30px;
+}
+
+.p-btn>div>a:hover{
+    background:#96bcc4;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+    color:#fff;
+}
+
+
+
+
+#artist_s>.inner_wrapper>.track{
+    width:640px; height:5px;
+    background:#ababab;
+    position:absolute;
+    top:110%; left:50%;
+    transform:translate(-50%, -50%);
+}
+#artist_s>.inner_wrapper>.track>.bar{
+    display:block;
+    width:35px;
+    height:5px;
+    background:#454545;
+    position:absolute;
+}
+
+#artist_s>.bottom_color{
+    width:100%; height:104px;
+    background:#96bcc4;
+    margin:110px auto 0 auto;
+}
+
+
+
+
+/* --------------------SUB PAGE - ARTIST SUB PAGE 끝---------------- */
